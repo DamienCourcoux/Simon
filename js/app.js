@@ -40,6 +40,7 @@ const app = {
       // add the corresponding color to the sequence
       app.sequence.push( app.colors[random] );
     }
+    app.showMessage("La partie commence, bonne chance !");
 
     // start the "Simon Says" sequence
     app.simonSays(app.sequence);
@@ -65,9 +66,17 @@ const app = {
   /** Fin du code fourni. Après, c'est à toi de jouer! */
 
   showMessage: function (message) {
-    document.getElementById('message').innerHTML = message;
-    
+    const messageElement = document.getElementById('message');
+    messageElement.style.display = "flex";
+    messageElement.innerHTML = message;
+    const btnStart = document.getElementById("go")
+    btnStart.style.display = "none";
   },
+
+  showBtnStart: function () {
+    document.getElementById("message").style.display = "none";
+    document.getElementById("go").style.display = "block"
+  }
 
 };
 

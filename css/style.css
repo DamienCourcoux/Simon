@@ -28,6 +28,14 @@ button#go {
 }
 
 div#message {
-  text-align: center;
+  width: 500px;
   font-size: 2em;
+  height: 10vh;
+  background-color: #ccc;
+  border: none;
+  margin: 3vh auto;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
