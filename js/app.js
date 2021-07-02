@@ -72,4 +72,4 @@ const app = {
 };
 
 
-document.addEventListener('domContentLoaded', app.init);
+document.addEventListener('DOMContentLoaded', app.init);
