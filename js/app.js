@@ -76,6 +76,12 @@ const app = {
   showBtnStart: function () {
     document.getElementById("message").style.display = "none";
     document.getElementById("go").style.display = "block"
+  },
+
+  endGame: function () {
+    alert(`Partie terminée. Votre score: ${app.sequence.length}`);
+    app.showBtnStart();
+    app.sequence = [];
   }
 
 };
