@@ -14,6 +14,8 @@ div.cell {
   border: 0px solid white;
   box-sizing: border-box;
   transition: border ease .1s;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 button#go {
